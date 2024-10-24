@@ -46,6 +46,7 @@ class PrincipalComponents(BaseEstimator, TransformerMixin):
         #
         ########## YOUR CODE HERE ##########
         # raise NotImplementedError()
+        X = X.astype(np.float32)
         
         Xc = X - np.mean(X, axis=0)
 
