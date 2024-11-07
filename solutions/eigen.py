@@ -82,6 +82,7 @@ class SpectralDecompositionPowerMethod:
         if self.store_intermediate_results:
             self.stored_eigenvalues.append(1)
             self.stored_eigenvectors.append(vec)
+        
         for i in range(self.max_iter):
 
             prev = np.copy(vec)
